@@ -138,7 +138,7 @@ a.product:hover {
 }
 
 .rating-no-votes {
-    color: gold;
+    color: gold !important;
 }
 
 .vote-star {
