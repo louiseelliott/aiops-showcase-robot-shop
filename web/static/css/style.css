@@ -134,7 +134,10 @@ a.product:hover {
 }
 
 .rating {
-    margin: 10px;
+    margin: 10px;    
+}
+
+.rating-no-votes {
     color: gold;
 }
 
