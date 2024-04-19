@@ -239,6 +239,23 @@
             }
         };
 
+        /**
+        * Generates range for ngRepeat
+        * @param start
+        * @param stop
+        * @param increment
+        */
+        $scope.generateRange = function(start, stop, increment) {
+            let a = [];
+
+            for(; start < stop; ) {
+                a[start] = start;
+                start += increment;
+            }
+
+            return a;
+        };
+
         function loadProduct(sku) {
             $http({
                 url: '/api/catalogue/product/' + sku,
