@@ -138,7 +138,7 @@ a.product:hover {
     color: gold !important;   
 }
 
-.rating-no-votes {
+product .rating-no-votes {
     color: gold !important;
 }
 
@@ -149,7 +149,7 @@ a.product:hover {
     opacity: 0.5;
 }
 
-.vote-star-no-opacity {
+product .vote-star-no-opacity {
     width: 30px;
     height: 30px;
     cursor: pointer;
