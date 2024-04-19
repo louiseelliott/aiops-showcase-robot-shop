@@ -8,13 +8,13 @@
     <div class="productimage">
         <img src="/images/{{ data.product.sku }}.png"/>
     </div>
-    <div class="rating">
+    <div class="rating-no-votes">
         Rating
         <span ng-if="data.rating.avg_rating != 0">
             {{ data.rating.avg_rating.toFixed(1) }} from {{ data.rating.rating_count }} votes
         </span>
         <div>            
-            <span ng-repeat="vote in generateRange(0, Math.floor(data.rating.avg_rating), 1)"> 
+            <span ng-repeat="vote in generateRange(0, Math.round(data.rating.avg_rating), 1);"> 
                 <img id="vote-{{ vote }}" class="vote-star-no-opacity" alt="{{ vote }}" src="/media/instana_icon_square.png"/>
             </span>
         </div>
@@ -35,7 +35,7 @@
             <button ng-click="addToCart();">Add to cart</button>
         </span>
     </div>
-    <div>
+    <div class="rating">
         Vote for your robot!   
         <div>
             <span ng-repeat="vote in [ 1, 2, 3, 4, 5 ]">
