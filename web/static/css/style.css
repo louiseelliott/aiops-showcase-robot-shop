@@ -134,7 +134,8 @@ a.product:hover {
 }
 
 .rating {
-    margin: 10px;    
+    margin: 10px; 
+    color: gold !important;   
 }
 
 .rating-no-votes {
