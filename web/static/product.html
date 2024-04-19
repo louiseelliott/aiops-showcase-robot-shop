@@ -13,8 +13,11 @@
         <span ng-if="data.rating.avg_rating != 0">
             {{ data.rating.avg_rating.toFixed(1) }} from {{ data.rating.rating_count }} votes
         </span>
-        <span ng-repeat="vote in generateRange(0, Math.round(data.rating.avg_rating), 1);"> 
-            <img id="vote-{{ vote }}" class="vote-star-no-opacity" alt="{{ vote }}" src="/media/instana_icon_square.png"/>
+        Rating
+        <span ng-repeat="vote in generateRange(1, Math.round(data.rating.avg_rating), 1);"> 
+            <span>
+                <img id="vote-{{ vote }}" class="vote-star-no-opacity" alt="{{ vote }}" src="/media/instana_icon_square.png"/>
+            </span>
         </span>        
         <span ng-if="data.rating.avg_rating == 0">
             Oops! something has gone wrong... 
