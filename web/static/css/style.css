@@ -142,6 +142,10 @@ a.product:hover {
     color: gold !important;
 }
 
+.rating-error {
+    color: red !important;
+}
+
 .vote-star {
     width: 30px;
     height: 30px;
